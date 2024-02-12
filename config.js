@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { Sequelize } = require('sequelize');
-const isVPS = !(__dirname.startsWith("/rgnk") || __dirname.startsWith("/skl"));
-const isHeroku = __dirname.startsWith("/skl");
-const isKoyeb = __dirname.startsWith("/rgnk");
+const isVPS = !(__dirname.startsWith("/xeno") || __dirname.startsWith("/skl"));
+const isHeroku = __dirname.startsWith("/xeno");
+const isKoyeb = __dirname.startsWith("/xeno");
 const isRailway = __dirname.startsWith("/railway");
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 function convertToBool(text, fault = 'true',fault2='on') {
